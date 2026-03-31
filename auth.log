@@ -1,0 +1,235 @@
+2026-03-30T11:47:32.799589+00:00 localhost systemd-logind[942]: New seat seat0.
+2026-03-30T11:47:32.799598+00:00 localhost systemd-logind[942]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-03-30T11:47:32.799602+00:00 localhost systemd-logind[942]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-03-30T11:47:32.799606+00:00 localhost systemd-logind[942]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-03-30T11:47:32.799679+00:00 localhost polkitd[923]: Loading rules from directory /etc/polkit-1/rules.d
+2026-03-30T11:47:32.799693+00:00 localhost polkitd[923]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-03-30T11:47:32.800326+00:00 localhost polkitd[923]: Finished loading, compiling and executing 16 rules
+2026-03-30T11:47:32.801594+00:00 localhost polkitd[923]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-03-30T11:47:43.782823+00:00 localhost passwd[1842]: password for 'root' changed by 'root'
+2026-03-30T11:47:43.847760+00:00 localhost groupadd[1852]: group added to /etc/group: name=vboxuser, GID=1000
+2026-03-30T11:47:43.853630+00:00 localhost groupadd[1852]: group added to /etc/gshadow: name=vboxuser
+2026-03-30T11:47:43.859939+00:00 localhost groupadd[1852]: new group: name=vboxuser, GID=1000
+2026-03-30T11:47:44.047080+00:00 localhost useradd[1858]: new user: name=vboxuser, UID=1000, GID=1000, home=/home/vboxuser, shell=/bin/bash, from=none
+2026-03-30T11:47:47.721098+00:00 localhost useradd[1858]: add 'vboxuser' to group 'sudo'
+2026-03-30T11:47:47.721359+00:00 localhost useradd[1858]: add 'vboxuser' to group 'vboxsf'
+2026-03-30T11:47:47.721425+00:00 localhost useradd[1858]: add 'vboxuser' to shadow group 'sudo'
+2026-03-30T11:47:47.721470+00:00 localhost useradd[1858]: add 'vboxuser' to shadow group 'vboxsf'
+2026-03-30T11:47:47.888355+00:00 localhost passwd[1961]: password for 'vboxuser' changed by 'root'
+2026-03-30T11:48:37.821245+00:00 localhost useradd[7125]: failed adding user 'vboxadd', exit code: 9
+2026-03-30T11:48:37.824196+00:00 localhost useradd[7126]: failed adding user 'vboxadd', exit code: 9
+2026-03-30T11:48:39.621905+00:00 localhost gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-03-30T11:48:39.833453+00:00 localhost systemd-logind[942]: New session c1 of user gdm.
+2026-03-30T11:48:39.872576+00:00 localhost (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-03-30T11:48:43.913713+00:00 localhost polkitd[923]: Registered Authentication Agent for unix-session:c1 (system bus name :1.49 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-03-30T11:48:56.700906+00:00 localhost gdm-password]: gkr-pam: unable to locate daemon control file
+2026-03-30T11:48:56.701107+00:00 localhost gdm-password]: gkr-pam: stashed password to try later in open session
+2026-03-30T11:48:56.746791+00:00 localhost gdm-password]: pam_unix(gdm-password:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-03-30T11:48:56.783593+00:00 localhost systemd-logind[942]: New session 2 of user vboxuser.
+2026-03-30T11:48:56.834037+00:00 localhost (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-03-30T11:48:57.515822+00:00 localhost gdm-password]: gkr-pam: unlocked login keyring
+2026-03-30T11:48:58.413711+00:00 localhost gnome-keyring-daemon[8423]: The PKCS#11 component was already initialized
+2026-03-30T11:48:58.414171+00:00 localhost gnome-keyring-daemon[8739]: discover_other_daemon: 1
+2026-03-30T11:48:58.430302+00:00 localhost gnome-keyring-daemon[8423]: The Secret Service was already initialized
+2026-03-30T11:48:58.430734+00:00 localhost gnome-keyring-daemon[8741]: discover_other_daemon: 1
+2026-03-30T11:48:58.430785+00:00 localhost gnome-keyring-daemon[8742]: discover_other_daemon: 1
+2026-03-30T11:49:01.014194+00:00 localhost polkitd[923]: Registered Authentication Agent for unix-session:2 (system bus name :1.88 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-03-30T11:49:02.702115+00:00 localhost gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-03-30T11:49:02.734039+00:00 localhost systemd-logind[942]: Session c1 logged out. Waiting for processes to exit.
+2026-03-30T11:49:02.747489+00:00 localhost polkitd[923]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.49, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-03-30T11:49:02.757314+00:00 localhost systemd-logind[942]: Removed session c1.
+2026-03-30T11:49:12.977475+00:00 localhost (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2026-03-30T11:53:26.252873+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt update
+2026-03-30T11:53:26.253608+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:53:30.159785+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:54:27.642744+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/install openssl-server
+2026-03-30T11:54:27.644181+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:54:27.649164+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:55:01.373932+00:00 localhost CRON[10231]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T11:55:01.379057+00:00 localhost CRON[10231]: pam_unix(cron:session): session closed for user root
+2026-03-30T11:55:16.911067+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt install openssl
+2026-03-30T11:55:16.912898+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:55:18.282852+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:56:04.475947+00:00 localhost pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:56:04.478622+00:00 localhost pkexec[10280]: vboxuser: Executing command [USER=root] [TTY=unknown] [CWD=/home/vboxuser] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-03-30T11:57:24.027875+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+2026-03-30T11:57:24.028987+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:57:24.040470+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:57:50.853030+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt update
+2026-03-30T11:57:50.859975+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:57:54.833511+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:58:12.082520+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt install openssh-server
+2026-03-30T11:58:12.083723+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:58:25.098845+00:00 localhost useradd[10919]: new user: name=sshd, UID=122, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+2026-03-30T11:58:33.054089+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:58:37.384580+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+2026-03-30T11:58:37.385583+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:58:37.512205+00:00 localhost sshd[11293]: Server listening on 0.0.0.0 port 22.
+2026-03-30T11:58:37.512377+00:00 localhost sshd[11293]: Server listening on :: port 22.
+2026-03-30T11:58:37.515512+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:58:55.573907+00:00 localhost sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+2026-03-30T11:58:55.574529+00:00 localhost sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:59:04.052771+00:00 localhost pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T11:59:04.054648+00:00 localhost pkexec[11305]: vboxuser: Executing command [USER=root] [TTY=unknown] [CWD=/home/vboxuser] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-03-30T11:59:12.979978+00:00 localhost sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T11:59:51.961348+00:00 localhost systemd-logind[942]: The system will power off now!
+2026-03-30T11:59:52.021988+00:00 localhost systemd-logind[942]: System is powering down.
+2026-03-30T11:59:52.139879+00:00 localhost gdm-password]: pam_unix(gdm-password:session): session closed for user vboxuser
+2026-03-30T11:59:52.296837+00:00 localhost sshd[11293]: Received signal 15; terminating.
+2026-03-30T12:01:01.772540+00:00 sanchit systemd-logind[781]: New seat seat0.
+2026-03-30T12:01:01.772554+00:00 sanchit systemd-logind[781]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-03-30T12:01:01.772558+00:00 sanchit systemd-logind[781]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-03-30T12:01:01.772562+00:00 sanchit systemd-logind[781]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-03-30T12:01:01.773342+00:00 sanchit polkitd[744]: Loading rules from directory /etc/polkit-1/rules.d
+2026-03-30T12:01:01.773352+00:00 sanchit polkitd[744]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-03-30T12:01:01.779220+00:00 sanchit polkitd[744]: Finished loading, compiling and executing 16 rules
+2026-03-30T12:01:01.783002+00:00 sanchit polkitd[744]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-03-30T12:01:03.856915+00:00 sanchit gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session opened for user gdm(uid=120) by (uid=0)
+2026-03-30T12:01:03.919335+00:00 sanchit systemd-logind[781]: New session c1 of user gdm.
+2026-03-30T12:01:03.967846+00:00 sanchit (systemd): pam_unix(systemd-user:session): session opened for user gdm(uid=120) by gdm(uid=0)
+2026-03-30T12:01:08.119867+00:00 sanchit polkitd[744]: Registered Authentication Agent for unix-session:c1 (system bus name :1.38 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-03-30T12:44:37.753291+00:00 sanchit CRON[1894]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T12:44:37.756048+00:00 sanchit CRON[1894]: pam_unix(cron:session): session closed for user root
+2026-03-30T12:45:01.765403+00:00 sanchit CRON[1896]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T12:45:01.769609+00:00 sanchit CRON[1896]: pam_unix(cron:session): session closed for user root
+2026-03-30T12:47:06.474347+00:00 sanchit gdm-password]: gkr-pam: unable to locate daemon control file
+2026-03-30T12:47:06.474636+00:00 sanchit gdm-password]: gkr-pam: stashed password to try later in open session
+2026-03-30T12:47:06.528343+00:00 sanchit gdm-password]: pam_unix(gdm-password:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-03-30T12:47:06.572632+00:00 sanchit systemd-logind[781]: New session 4 of user vboxuser.
+2026-03-30T12:47:06.617857+00:00 sanchit (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-03-30T12:47:07.493497+00:00 sanchit gdm-password]: gkr-pam: unlocked login keyring
+2026-03-30T12:47:08.257880+00:00 sanchit gnome-keyring-daemon[1934]: The Secret Service was already initialized
+2026-03-30T12:47:08.258411+00:00 sanchit gnome-keyring-daemon[2159]: discover_other_daemon: 1
+2026-03-30T12:47:08.270503+00:00 sanchit gnome-keyring-daemon[1934]: The PKCS#11 component was already initialized
+2026-03-30T12:47:08.274944+00:00 sanchit gnome-keyring-daemon[2165]: discover_other_daemon: 1
+2026-03-30T12:47:08.288337+00:00 sanchit gnome-keyring-daemon[2166]: discover_other_daemon: 1
+2026-03-30T12:47:11.479457+00:00 sanchit polkitd[744]: Registered Authentication Agent for unix-session:4 (system bus name :1.75 [/usr/bin/gnome-shell], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8)
+2026-03-30T12:47:13.019512+00:00 sanchit gdm-launch-environment]: pam_unix(gdm-launch-environment:session): session closed for user gdm
+2026-03-30T12:47:13.074523+00:00 sanchit systemd-logind[781]: Session c1 logged out. Waiting for processes to exit.
+2026-03-30T12:47:13.134495+00:00 sanchit polkitd[744]: Unregistered Authentication Agent for unix-session:c1 (system bus name :1.38, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_US.UTF-8) (disconnected from bus)
+2026-03-30T12:47:13.144534+00:00 sanchit systemd-logind[781]: Removed session c1.
+2026-03-30T12:47:23.596347+00:00 sanchit (sd-pam): pam_unix(systemd-user:session): session closed for user gdm
+2026-03-30T12:48:15.486377+00:00 sanchit pkexec: pam_unix(polkit-1:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T12:48:15.489278+00:00 sanchit pkexec[3189]: vboxuser: Executing command [USER=root] [TTY=unknown] [CWD=/home/vboxuser] [COMMAND=/usr/lib/update-notifier/package-system-locked]
+2026-03-30T12:48:17.387448+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/tcpdump
+2026-03-30T12:48:17.389730+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T12:48:21.579681+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T12:50:26.306535+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/adduser test1
+2026-03-30T12:50:26.307557+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T12:50:26.505267+00:00 sanchit groupadd[3222]: group added to /etc/group: name=test1, GID=1001
+2026-03-30T12:50:26.510957+00:00 sanchit groupadd[3222]: group added to /etc/gshadow: name=test1
+2026-03-30T12:50:26.513400+00:00 sanchit groupadd[3222]: new group: name=test1, GID=1001
+2026-03-30T12:50:26.557976+00:00 sanchit useradd[3229]: new user: name=test1, UID=1001, GID=1001, home=/home/test1, shell=/bin/bash, from=/dev/pts/1
+2026-03-30T12:50:46.719193+00:00 sanchit passwd[3242]: pam_unix(passwd:chauthtok): password changed for test1
+2026-03-30T12:50:46.720934+00:00 sanchit passwd[3242]: gkr-pam: couldn't update the login keyring password: no old password was entered
+2026-03-30T12:51:07.627471+00:00 sanchit chfn[3243]: changed user 'test1' information
+2026-03-30T12:51:09.948937+00:00 sanchit gpasswd[3251]: members of group users set by root to test1
+2026-03-30T12:51:09.953497+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T12:55:02.019252+00:00 sanchit CRON[3269]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T12:55:02.022543+00:00 sanchit CRON[3269]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:05:01.132255+00:00 sanchit CRON[3316]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:05:01.137373+00:00 sanchit CRON[3316]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:15:01.286530+00:00 sanchit CRON[3361]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:15:01.290952+00:00 sanchit CRON[3361]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:17:01.300311+00:00 sanchit CRON[3368]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:17:01.305171+00:00 sanchit CRON[3368]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:25:01.410040+00:00 sanchit CRON[3393]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:25:01.445640+00:00 sanchit CRON[3393]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:30:01.424935+00:00 sanchit CRON[3435]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:30:01.431921+00:00 sanchit CRON[3435]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:34:47.959183+00:00 sanchit sshd[3457]: Server listening on 0.0.0.0 port 22.
+2026-03-30T13:34:47.959410+00:00 sanchit sshd[3457]: Server listening on :: port 22.
+2026-03-30T13:34:48.042316+00:00 sanchit sshd[3460]: Received disconnect from 192.168.56.102 port 48804:11: Bye Bye [preauth]
+2026-03-30T13:34:48.042514+00:00 sanchit sshd[3460]: Disconnected from authenticating user test1 192.168.56.102 port 48804 [preauth]
+2026-03-30T13:34:48.481187+00:00 sanchit sshd[3457]: error: beginning MaxStartups throttling
+2026-03-30T13:34:48.481289+00:00 sanchit sshd[3457]: drop connection #14 from [192.168.56.102]:48934 on [192.168.56.104]:22 past MaxStartups
+2026-03-30T13:34:48.707316+00:00 sanchit sshd[3467]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.750511+00:00 sanchit sshd[3468]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.818335+00:00 sanchit sshd[3471]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.853261+00:00 sanchit sshd[3464]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.878663+00:00 sanchit sshd[3466]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.879540+00:00 sanchit sshd[3475]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.894751+00:00 sanchit sshd[3462]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.895010+00:00 sanchit sshd[3472]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.895283+00:00 sanchit sshd[3470]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.895583+00:00 sanchit sshd[3465]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.903485+00:00 sanchit sshd[3469]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.903775+00:00 sanchit sshd[3474]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:48.920771+00:00 sanchit sshd[3473]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.102  user=test1
+2026-03-30T13:34:49.169013+00:00 sanchit sshd[3463]: Accepted password for test1 from 192.168.56.102 port 48828 ssh2
+2026-03-30T13:34:49.171993+00:00 sanchit sshd[3463]: pam_unix(sshd:session): session opened for user test1(uid=1001) by test1(uid=0)
+2026-03-30T13:34:49.209778+00:00 sanchit systemd-logind[781]: New session 12 of user test1.
+2026-03-30T13:34:49.254276+00:00 sanchit (systemd): pam_unix(systemd-user:session): session opened for user test1(uid=1001) by test1(uid=0)
+2026-03-30T13:34:49.947077+00:00 sanchit sshd[3638]: Received disconnect from 192.168.56.102 port 48828:11: Bye Bye
+2026-03-30T13:34:49.948788+00:00 sanchit sshd[3638]: Disconnected from user test1 192.168.56.102 port 48828
+2026-03-30T13:34:49.949351+00:00 sanchit sshd[3463]: pam_unix(sshd:session): session closed for user test1
+2026-03-30T13:34:49.973276+00:00 sanchit systemd-logind[781]: Session 12 logged out. Waiting for processes to exit.
+2026-03-30T13:34:50.146301+00:00 sanchit sshd[3467]: Failed password for test1 from 192.168.56.102 port 48862 ssh2
+2026-03-30T13:34:50.187121+00:00 sanchit sshd[3468]: Failed password for test1 from 192.168.56.102 port 48864 ssh2
+2026-03-30T13:34:50.252805+00:00 sanchit sshd[3471]: Failed password for test1 from 192.168.56.102 port 48896 ssh2
+2026-03-30T13:34:50.288466+00:00 sanchit sshd[3464]: Failed password for test1 from 192.168.56.102 port 48840 ssh2
+2026-03-30T13:34:50.314629+00:00 sanchit sshd[3475]: Failed password for test1 from 192.168.56.102 port 48924 ssh2
+2026-03-30T13:34:50.314913+00:00 sanchit sshd[3466]: Failed password for test1 from 192.168.56.102 port 48850 ssh2
+2026-03-30T13:34:50.324119+00:00 sanchit sshd[3462]: Failed password for test1 from 192.168.56.102 port 48812 ssh2
+2026-03-30T13:34:50.326660+00:00 sanchit sshd[3472]: Failed password for test1 from 192.168.56.102 port 48904 ssh2
+2026-03-30T13:34:50.327486+00:00 sanchit sshd[3470]: Failed password for test1 from 192.168.56.102 port 48890 ssh2
+2026-03-30T13:34:50.327756+00:00 sanchit sshd[3465]: Failed password for test1 from 192.168.56.102 port 48842 ssh2
+2026-03-30T13:34:50.337539+00:00 sanchit sshd[3469]: Failed password for test1 from 192.168.56.102 port 48880 ssh2
+2026-03-30T13:34:50.337926+00:00 sanchit sshd[3474]: Failed password for test1 from 192.168.56.102 port 48922 ssh2
+2026-03-30T13:34:50.354620+00:00 sanchit sshd[3473]: Failed password for test1 from 192.168.56.102 port 48920 ssh2
+2026-03-30T13:34:50.713059+00:00 sanchit sshd[3468]: Connection closed by authenticating user test1 192.168.56.102 port 48864 [preauth]
+2026-03-30T13:34:50.714171+00:00 sanchit sshd[3471]: Connection closed by authenticating user test1 192.168.56.102 port 48896 [preauth]
+2026-03-30T13:34:50.719861+00:00 sanchit sshd[3470]: Connection closed by authenticating user test1 192.168.56.102 port 48890 [preauth]
+2026-03-30T13:34:50.722667+00:00 sanchit sshd[3467]: Connection closed by authenticating user test1 192.168.56.102 port 48862 [preauth]
+2026-03-30T13:34:50.729390+00:00 sanchit sshd[3466]: Connection closed by authenticating user test1 192.168.56.102 port 48850 [preauth]
+2026-03-30T13:34:50.757425+00:00 sanchit sshd[3464]: Connection closed by authenticating user test1 192.168.56.102 port 48840 [preauth]
+2026-03-30T13:34:50.758667+00:00 sanchit sshd[3462]: Connection closed by authenticating user test1 192.168.56.102 port 48812 [preauth]
+2026-03-30T13:34:50.763326+00:00 sanchit sshd[3475]: Connection closed by authenticating user test1 192.168.56.102 port 48924 [preauth]
+2026-03-30T13:34:50.763432+00:00 sanchit sshd[3469]: Connection closed by authenticating user test1 192.168.56.102 port 48880 [preauth]
+2026-03-30T13:34:50.776184+00:00 sanchit sshd[3465]: Connection closed by authenticating user test1 192.168.56.102 port 48842 [preauth]
+2026-03-30T13:34:50.793199+00:00 sanchit sshd[3474]: Connection closed by authenticating user test1 192.168.56.102 port 48922 [preauth]
+2026-03-30T13:34:50.797484+00:00 sanchit sshd[3472]: Connection closed by authenticating user test1 192.168.56.102 port 48904 [preauth]
+2026-03-30T13:34:50.798476+00:00 sanchit sshd[3473]: Connection closed by authenticating user test1 192.168.56.102 port 48920 [preauth]
+2026-03-30T13:34:50.945961+00:00 sanchit systemd-logind[781]: Removed session 12.
+2026-03-30T13:35:01.170045+00:00 sanchit (sd-pam): pam_unix(systemd-user:session): session closed for user test1
+2026-03-30T13:35:01.443407+00:00 sanchit CRON[3867]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:35:01.801502+00:00 sanchit CRON[3867]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:37:55.361479+00:00 sanchit gdm-password]: gkr-pam: unlocked login keyring
+2026-03-30T13:38:49.539773+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/cat /var/log/auth.log
+2026-03-30T13:38:49.540556+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:38:49.548381+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:44:10.501012+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/mkdir /mnt/share
+2026-03-30T13:44:10.538384+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:44:10.540415+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:45:01.485570+00:00 sanchit CRON[4013]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:45:01.499203+00:00 sanchit CRON[4013]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:47:10.700657+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/mount -t vboxsf share /mnt/share/
+2026-03-30T13:47:10.701193+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:47:10.722468+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:47:21.518929+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/mount -t vboxsf vmshare /mnt/share/
+2026-03-30T13:47:21.521680+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:47:21.538949+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:47:39.077979+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/mkdir /mnt/vmshare
+2026-03-30T13:47:39.079698+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:47:39.083164+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:47:43.188419+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/mount -t vboxsf vmshare /mnt/vmshare/
+2026-03-30T13:47:43.226968+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:47:43.227304+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:48:00.830540+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/mount -t vboxsf share /mnt/vmshare/
+2026-03-30T13:48:00.831530+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:48:00.838625+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T13:55:01.535178+00:00 sanchit CRON[4116]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T13:55:01.539972+00:00 sanchit CRON[4116]: pam_unix(cron:session): session closed for user root
+2026-03-30T13:59:35.525042+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/media/vboxuser ; USER=root ; COMMAND=/usr/bin/mkdir -p /mnt/vmfolder
+2026-03-30T13:59:35.532601+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T13:59:35.533086+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T14:01:57.829806+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/media/vboxuser ; USER=root ; COMMAND=/usr/bin/mount -t vboxsf vmfolder /mnt/vmfolder
+2026-03-30T14:01:57.832410+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T14:01:57.836414+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T14:05:01.683793+00:00 sanchit CRON[4153]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-30T14:05:01.688041+00:00 sanchit CRON[4153]: pam_unix(cron:session): session closed for user root
+2026-03-30T14:08:36.396676+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/media/vboxuser ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /mnt/vmfolder/
+2026-03-30T14:08:36.407053+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-03-30T14:08:36.411831+00:00 sanchit sudo: pam_unix(sudo:session): session closed for user root
+2026-03-30T14:11:34.255880+00:00 sanchit sudo: vboxuser : TTY=pts/0 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/cp /var/log/auth.log /media/sf_vmfolder/
+2026-03-30T14:11:34.258438+00:00 sanchit sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
