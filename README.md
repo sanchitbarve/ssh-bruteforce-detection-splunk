@@ -23,7 +23,7 @@ hydra -l test1 -P passwords.txt ssh://192.168.56.104
 
 
 This generated multiple login attempts against the SSH service.
-## 📜 Log Collection
+##  Log Collection
 
 Authentication logs were collected from:
 
